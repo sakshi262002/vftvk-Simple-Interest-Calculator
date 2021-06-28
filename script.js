@@ -4,8 +4,8 @@ function compute()
     r=document.getElementById("rate").value;
     n=document.getElementById("years").value;
     
-    SI=parseInt((p*n*r)/100);
-    
+    result=parseInt((p*n*r)/100);
+    document.getElementById('num').innerHTML="SIMPLE INTEREST:"+result;
     
 }
         
