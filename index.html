@@ -1,26 +1,54 @@
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-	<body>
-        <br><br><br><div class="center">
-        <h1><i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSimple Interest Calculator</i></h1>
-        <h2>
-        Amount &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number"  id="principal">  <br/>
-        Rate &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number"  id="rate">  <br/>
-        No. of Years&nbsp&nbsp&nbsp <input type="number"  id="years">  <br/>
-		 </h2>
-		 <button onclick="compute()">Compute</button>
+	<title>Web App-Simple interest calculator</title>
+    	<head>
+   	<script src="script.js"></script>
+    	<link rel="stylesheet" href="style.css">
+    	</head>
+	
+	
+     <body>
+	
+     <br><br><br><br><br><br><br><br><br><br>
+     <div class="center">
+     <h1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Simple Interest Calculator</h1>
+     <h2>Amount &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="number"  id="principal">  
+        
+     <div class="slidecontainer">
+     <br>Rate &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	
+     <input type="range" min="1" max="20" value="10" id="rate">
+     </div>
+	
+	 
+	<div class="container">
+	<br>No.of years &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<select>
+
+	<option disabled hidden selected>years</option>
+	<option value="1">2022</option>
+	<option value="2">2023</option>
+	<option value="3">2024</option>
+	<option value="4">2025</option>
+	<option value="5">2026</option>
+	<option value="6">2027</option>
+	<option value="7">2028</option>
+	<option value="8">2029</option>
+	<option value="9">2030</option>
+	
+	</select>
+	
+ 		</h2>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick="compute()">Compute</button>
 		<h1><p id="result"></p></h1>
 		<h2>
-        interst: <span id="result"></span><br>
-		If you deposite <span id="pri"></span><br>
-                at an Interest Rate <span id="ir"></span><br>
-		You will receive an amount <span id="amount"></span>
-                in the year <span id="time"></span><br>
-        </h2>
-        </div>
+       	        Simple Interst: <span id="result"></span><br></h2>
+		<h3>If you Deposite Rs <span id="pri"></span><br>
+		At an Interst Rate <span id="ra"></span>%<br>
+		You will Receive Amount Of Rs &nbsp <span id="amount"></span> in the year <span id="time"></span></h3>
+      
+    </div> 
     </body>
 	
 </html>
